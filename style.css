@@ -1,0 +1,372 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* BACKGROUND */
+.bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* HEADER (igual ao da imagem) */
+.header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+    position: relative;
+    z-index: 2;
+
+    /* gradiente suave + transparência */
+    background: linear-gradient(
+        90deg,
+        rgba(42, 10, 61, 0.95),
+        rgba(106, 27, 154, 0.9),
+        rgba(194, 24, 91, 0.85),
+        rgba(245, 124, 0, 0.8),
+        rgba(250, 204, 21, 0.75)
+    );
+
+    /* integração com o fundo */
+    backdrop-filter: blur(8px);
+
+    /* detalhe fino */
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    margin: left 20px;
+}
+
+/* efeito hover (linha animada) */
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    opacity: 0.8;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.nav a.ativo {
+    border-bottom: 2px solid white;
+}
+
+
+.container {
+    margin-left: 110px;
+    padding: 30px;
+}
+/* Garra header */
+.header::before {
+    filter: contrast(120%) brightness(110%);
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: 
+        linear-gradient(120deg, rgba(255,255,255,0.08) 2px, transparent 2px),
+        linear-gradient(60deg, rgba(255,255,255,0.05) 2px, transparent 2px);
+
+    background-size: 200px 200px;
+    mix-blend-mode: overlay;
+    opacity: 0.4;
+
+    pointer-events: none;
+}
+
+/* Garras do header */
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: 
+        linear-gradient(120deg, rgba(255,255,255,0.08) 2px, transparent 2px),
+        linear-gradient(60deg, rgba(255,255,255,0.05) 2px, transparent 2px);
+
+    background-size: 200px 200px;
+    mix-blend-mode: overlay;
+    opacity: 0.4;
+
+    pointer-events: none;
+}
+
+/* Garras da lateral */
+.sidebar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: 
+        linear-gradient(120deg, rgba(255,255,255,0.08) 2px, transparent 2px),
+        linear-gradient(60deg, rgba(255,255,255,0.05) 2px, transparent 2px);
+
+    background-size: 200px 200px;
+    mix-blend-mode: overlay;
+    opacity: 0.3;
+
+    pointer-events: none;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: url('../img/textura.png');
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.25;
+    mix-blend-mode: overlay;
+
+    pointer-events: none;
+}
+
+.sidebar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: url('../img/textura.png');
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.2;
+    mix-blend-mode: overlay;
+
+    pointer-events: none;
+}
+
+/* Heat */
+
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* BACKGROUND */
+.bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* HEADER (igual ao da imagem) */
+.header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+    position: relative;
+    z-index: 2;
+
+    /* gradiente suave + transparência */
+    background: linear-gradient(
+        90deg,
+        rgba(42, 10, 61, 0.95),
+        rgba(106, 27, 154, 0.9),
+        rgba(194, 24, 91, 0.85),
+        rgba(245, 124, 0, 0.8),
+        rgba(250, 204, 21, 0.75)
+    );
+
+    /* integração com o fundo */
+    backdrop-filter: blur(8px);
+
+    /* detalhe fino */
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 60px;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+
+    background: linear-gradient(
+        180deg,
+        rgba(42, 10, 61, 0.95),
+        rgba(106, 27, 154, 0.9),
+        rgba(194, 24, 91, 0.85),
+        rgba(245, 124, 0, 0.8),
+        rgba(250, 204, 21, 0.75)
+    );
+}
+
+.container {
+    margin-left: 110px;
+    padding: 30px;
+}
+/* Garra header */
+.header::before {
+    filter: contrast(120%) brightness(110%);
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: 
+        linear-gradient(120deg, rgba(255,255,255,0.08) 2px, transparent 2px),
+        linear-gradient(60deg, rgba(255,255,255,0.05) 2px, transparent 2px);
+
+    background-size: 200px 200px;
+    mix-blend-mode: overlay;
+    opacity: 0.4;
+
+    pointer-events: none;
+}
+
+/* Garras do header */
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: 
+        linear-gradient(120deg, rgba(255,255,255,0.08) 2px, transparent 2px),
+        linear-gradient(60deg, rgba(255,255,255,0.05) 2px, transparent 2px);
+
+    background-size: 200px 200px;
+    mix-blend-mode: overlay;
+    opacity: 0.4;
+
+    pointer-events: none;
+}
+
+/* Garras da lateral */
+.sidebar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: 
+        linear-gradient(120deg, rgba(255,255,255,0.08) 2px, transparent 2px),
+        linear-gradient(60deg, rgba(255,255,255,0.05) 2px, transparent 2px);
+
+    background-size: 200px 200px;
+    mix-blend-mode: overlay;
+    opacity: 0.3;
+
+    pointer-events: none;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: url('../img/textura.png');
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.25;
+    mix-blend-mode: overlay;
+
+    pointer-events: none;
+}
+
+.sidebar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: url('../img/textura.png');
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.2;
+    mix-blend-mode: overlay;
+
+    pointer-events: none;
+}
+
+/*cavaliers*/
+.cavs-theme .header {
+    background: linear-gradient(
+        90deg,
+        rgba(20, 5, 10, 0.95),
+        rgba(80, 10, 30, 0.9),
+        rgba(120, 20, 40, 0.85),
+        rgba(160, 100, 40, 0.8),
+        rgba(212, 175, 75, 0.75)
+    );
+}
+
+.cavs-theme .sidebar {
+    background: linear-gradient(
+        180deg,
+        rgba(20, 5, 10, 0.95),
+        rgba(80, 10, 30, 0.9),
+        rgba(120, 20, 40, 0.85),
+        rgba(160, 100, 40, 0.8),
+        rgba(212, 175, 75, 0.75)
+    );
+}
+
+.cavs-theme.bg {
+    filter: hue-rotate(330deg) saturate(1.2) brightness(0.85);
+}
+
+
+
+/*Heat*/
+
+.heat-theme .header {
+    background: linear-gradient(
+        90deg,
+        rgba(10, 0, 0, 0.95),
+        rgba(60, 0, 0, 0.95),
+        rgba(120, 0, 0, 0.9),
+        rgba(180, 0, 0, 0.85),
+        rgba(255, 40, 0, 0.8)
+    );
+    box-shadow: 0 2px 20px rgba(255, 0, 0, 0.3);
+}
+
+.heat-theme .sidebar {
+    background: linear-gradient(
+        180deg,
+        rgba(10, 0, 0, 0.95),
+        rgba(60, 0, 0, 0.95),
+        rgba(120, 0, 0, 0.9),
+        rgba(180, 0, 0, 0.85),
+        rgba(255, 40, 0, 0.8)
+    );
+}
+
