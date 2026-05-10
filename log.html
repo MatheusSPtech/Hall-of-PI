@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    
+    <body class="bg" style ="background-image: url('img/textura.png');">
+
+            <div class="header nav">
+                <a href="cavs1.html">The Draft</a>
+                <a href="miami.html">The Big Three</a>
+                <a href="cavs2.html">The Redemption</a>
+                <a href="lakers.html">The last dance</a>
+                <a href="log.html" class="ativo">Login</a>
+            </div>
+
+            <div class="container">
+
+                <div class="card">
+
+    <h1>Hall Access</h1>
+
+    <!-- BOTÕES DE TROCA -->
+    <div class="toggle">
+        <button onclick="mostrarCadastro()">Cadastro</button>
+        <button onclick="mostrarLogin()">Login</button>
+    </div>
+
+    <!-- FORMULÁRIOS -->
+    <div class="form-area">
+
+        <div class="form-box" id="formCadastro">
+            <h2>Cadastro</h2>
+            <input type="text" id="ipt_nome" placeholder="Nome">
+            <input type="password" id="ipt_senha" placeholder="Senha">
+            <button onclick="cadastrar()">Cadastrar</button>
+        </div>
+
+        <div class="form-box hidden" id="formLogin">
+            <h2>Login</h2>
+            <input type="text" id="ipt_login_nome" placeholder="Nome">
+            <input type="password" id="ipt_login_senha" placeholder="Senha">
+            <button onclick="login()">Entrar</button>
+        </div>
+
+    </div>
+
+    <div id="resultado"></div>
+
+</div>
+
+            </div>
+
+    </body>
+</html>

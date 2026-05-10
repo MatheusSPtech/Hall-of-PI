@@ -2,20 +2,37 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Lakers Era</title>
+    <title>Hall of PI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg" style="background-image: url('img/lakers.png');">
+<body>
+    <header class="header" id="header">
 
-    <div class="header nav">
-        <a href="cavs1.html">The Draft</a>
-        <a href="miami.html">The Big Three</a>
-        <a href="cavs2.html">The Redemption</a>
-        <a href="lakers.html" class="ativo">The last dance</a>
+    <!-- MENU ICON -->
+    <div class="menu-icon" onclick="menuLateral()">
+        ☰
     </div>
 
+    <!-- LOGO -->
+    <div class="logo" id="logo">
+        <img src="img/logo.png" alt="">
+    </div>
 
+    <!-- MENU -->
+    <nav class="nav" id="nav">
+
+        <a href="#draft">The Draft</a>
+
+        <a href="#miami">The Big Three</a>
+
+        <a href="#cavs">The Redemption</a>
+
+        <a href="#lakers">The Last Dance</a>
+
+    </nav>
+
+</header>
 
     <!-- conteúdo -->
     <div class="container">
@@ -26,4 +43,5 @@
 
 
 </body>
+<script src="script.js"></script>
 </html>
